@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300;400&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --ff-primary: "IBM Plex Sans Condensed", serif;
+  --ff-secondary: "Roboto", serif;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+body {
+  font-size: 1rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 700px;
+  height: 100%;
+  /*overflow: hidden;*/
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+h1 {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-regular);
+  color: rgba(0, 0, 0, 1);
+  font-size: 3rem;
+}
+
+.icon {
+  background: url("../images/hi.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+article::first-letter {
+  font-size: 1.5rem;
+}
+
+article > p {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-light);
+  font-size: 1.125rem;
+  margin-block: 0.5em;
+}
+
+article > ul {
+  list-style: none;
+  padding: 1rem;
+}
+article > a {
+  display: block;
+  margin: 0.5rem 1rem;
+}
